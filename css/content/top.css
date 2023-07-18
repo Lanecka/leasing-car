@@ -1,0 +1,69 @@
+.top {
+  color: var(--white);
+  text-align: center;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  top: 247px
+}
+
+.top__title {
+  margin-bottom: 38px;
+  font-size: 96px;
+  font-weight: 700;
+}
+
+.top__link {
+  font-size: 36px;
+  font-weight: 700;
+  background: var(--black);
+  padding: 23px 40px;
+  max-width: 430px;
+  width: 100%;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+/*затемнение главного экрана*/
+.swiper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(21, 21, 21, .3);
+  z-index: 2;
+}
+
+.swiper-slide {
+  height: 100vh;
+  background-size: cover;
+  background-position: center 80%;
+  background-repeat: no-repeat;
+}
+
+.swiper-pagination-bullet {
+  width: 120px;
+  height: 3px;
+  background: var(--black);
+  border-radius: 0;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  height: 6px;
+  background: var(--white);
+}
+
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, 40px);
+}
+
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 15px);
+}

@@ -1,0 +1,11 @@
+/*content*/
+@import 'content/header.css';
+@import 'content/top.css';
+@import 'content/footer.css';
+
+/*utilites*/
+@import 'utilites/reset.css';
+@import 'utilites/fonts.css';
+@import 'utilites/colors.css';
+@import 'utilites/global.css';
+

@@ -12,6 +12,7 @@
 }
 
 .header__img {
+  transition: .5s;
   height: 55px;
 }
 
@@ -40,5 +41,9 @@
 }
 
 .menu__link:hover {
+  color: var(--blue);
+}
+
+.menu__link-active {
   color: var(--blue);
 }

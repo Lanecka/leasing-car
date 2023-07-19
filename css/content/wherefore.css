@@ -1,0 +1,31 @@
+.wherefore {
+  padding-top: 150px;
+}
+
+.wherefore__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.wherefore__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.wherefore__img {
+  margin-bottom: 30px;
+}
+
+.wherefore__desc h3 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.wherefore__desc p {
+  line-height: 130%;
+}

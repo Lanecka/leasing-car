@@ -1,6 +1,10 @@
 /*content*/
 @import 'content/header.css';
 @import 'content/top.css';
+@import 'content/wherefore.css';
+@import 'content/work.css';
+@import 'content/welcome.css';
+@import 'content/things.css';
 @import 'content/footer.css';
 
 /*utilites*/

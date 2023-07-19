@@ -46,4 +46,9 @@
 
 .menu__link-active {
   color: var(--blue);
+  cursor: default;
+}
+
+.menu__link-active:hover {
+  opacity: .8;
 }

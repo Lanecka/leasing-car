@@ -1,11 +1,13 @@
 /*content*/
 @import 'content/header.css';
-@import 'content/top.css';
-@import 'content/wherefore.css';
-@import 'content/work.css';
-@import 'content/welcome.css';
-@import 'content/things.css';
+@import 'content/index/top.css';
+@import 'content/index/wherefore.css';
+@import 'content/index/work.css';
+@import 'content/index/welcome.css';
+@import 'content/index/things.css';
 @import 'content/footer.css';
+@import 'content/blog.css';
+@import 'content/contacts/contact.css';
 
 /*utilites*/
 @import 'utilites/reset.css';

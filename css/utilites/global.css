@@ -48,6 +48,11 @@ body {
   text-align: center;
 }
 
+.section__subtitle-full p {
+  max-width: 1200px;
+  text-align: center;
+}
+
 .section__info p {
   margin: 0 auto 50px;
   max-width: 580px;
@@ -56,4 +61,34 @@ body {
 
 .section__info--last p {
   margin-bottom: 0;
+}
+
+.section__btn {
+  text-align: center;
+  background: var(--black);
+  color: var(--white);
+  padding: 13px 61px;
+  cursor: pointer;
+  transition: .5s;
+  text-transform: uppercase;
+}
+
+.section__btn:hover {
+  background: var(--blue);
+  border-color: var(--blue);
+}
+
+.section__link {
+  padding: 4px 25px;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  transition: .5s;
+  text-transform: lowercase;
+}
+
+.section__link:hover {
+  background: var(--black);
 }

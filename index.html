@@ -18,9 +18,14 @@
             <img class="header__img" src="img/general/logo.svg" alt="logotype">
           </a>
           <nav class="menu">
+            <div class="menu__burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="#">NEW CARS</a>
+                <a class="menu__link" href="catalog.html">NEW CARS</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="#">PRE-OWNED CARS</a>
@@ -42,8 +47,12 @@
     <main class="main">
       <section class="top">
         <div class="container">
-          <h1 class="top__title">Leasing From D&M</h1>
-          <a href="#" class="top__link">FIND A CAR</a>
+          <div class="top__block">
+            <h1 class="top__title">Leasing From D&M</h1>
+            <a href="catalog.html" class="top__link">
+              <p>FIND A CAR</p>
+            </a>
+          </div>
         </div>
       </section>
       <div class="slider">
@@ -67,48 +76,50 @@
           <div class="section__title">
             <h2>Why Lease with D&M?</h2>
           </div>
-          <ul class="wherefore__list">
-            <li class="wherefore__item">
-              <img class="wherefore__img" src="img/wherefore/img1.svg" alt="top dealers">
-              <div class="wherefore__desc">
-                <h3>Top Dealers</h3>
-                <p>
-                  TrueCar Certified Dealers compete for your business
-                  by providing discounted pricing on in-stock inventory.
-                </p>
-              </div>
-            </li>
-            <li class="wherefore__item">
-              <img class="wherefore__img" src="img/wherefore/img2.svg" alt="Discounted Pricing">
-              <div class="wherefore__desc">
-                <h3>Discounted Pricing</h3>
-                <p>
-                  View local inventory from the comfort of home and get access to guaranteed savings
-                  on the car of your choice.
-                </p>
-              </div>
-            </li>
-            <li class="wherefore__item">
-              <img class="wherefore__img" src="img/wherefore/img3.svg" alt="Lower Payments">
-              <div class="wherefore__desc">
-                <h3>Lower Payments</h3>
-                <p>
-                  Get discounted pricing when you shop for a car or truck using TrueCar
-                  and save on your lease payment.
-                </p>
-              </div>
-            </li>
-            <li class="wherefore__item">
-              <img class="wherefore__img" src="img/wherefore/img4.svg" alt="Easy Upgrade">
-              <div class="wherefore__desc">
-                <h3>Easy Upgrade</h3>
-                <p>
-                  Easy to upgrade to the newest vehicle model every few years if you would
-                  like to be modern and comfortable
-                </p>
-              </div>
-            </li>
-          </ul>
+          <div class="wherefore__block">
+            <ul class="wherefore__list">
+              <li class="wherefore__item">
+                <img class="wherefore__img" src="img/wherefore/img1.svg" alt="top dealers">
+                <div class="wherefore__desc">
+                  <h3>Top Dealers</h3>
+                  <p>
+                    TrueCar Certified Dealers compete for your business
+                    by providing discounted pricing on in-stock inventory.
+                  </p>
+                </div>
+              </li>
+              <li class="wherefore__item">
+                <img class="wherefore__img" src="img/wherefore/img2.svg" alt="Discounted Pricing">
+                <div class="wherefore__desc">
+                  <h3>Discounted Pricing</h3>
+                  <p>
+                    View local inventory from the comfort of home and get access to guaranteed savings
+                    on the car of your choice.
+                  </p>
+                </div>
+              </li>
+              <li class="wherefore__item">
+                <img class="wherefore__img" src="img/wherefore/img3.svg" alt="Lower Payments">
+                <div class="wherefore__desc">
+                  <h3>Lower Payments</h3>
+                  <p>
+                    Get discounted pricing when you shop for a car or truck using TrueCar
+                    and save on your lease payment.
+                  </p>
+                </div>
+              </li>
+              <li class="wherefore__item">
+                <img class="wherefore__img" src="img/wherefore/img4.svg" alt="Easy Upgrade">
+                <div class="wherefore__desc">
+                  <h3>Easy Upgrade</h3>
+                  <p>
+                    Easy to upgrade to the newest vehicle model every few years if you would
+                    like to be modern and comfortable
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </section><!--END why lease / wherefore-->
 
         <section class="section work"><!--work-->
@@ -174,11 +185,13 @@
           <div class="section__subtitle section__subtitle-centre">
             <p>Find out how easy it is to lease from D&M</p>
           </div>
-          <iframe class="welcome__video" width="1000" height="500" src="https://www.youtube.com/embed/gGgpRIZB2OI?controls=0"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
+          <div class="welcome__video">
+            <iframe class="" width="100%" src="https://www.youtube.com/embed/gGgpRIZB2OI?controls=0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
         </section><!--END welcome-->
 
         <section class="section important"><!--important-->
@@ -187,89 +200,93 @@
           </div>
           <div class="section__info">
             <p>
-              Depending on your circumstances and what is important to you, 
-              a lease could be a great option for your next vehicle. Below 
+              Depending on your circumstances and what is important to you,
+              a lease could be a great option for your next vehicle. Below
               are some important factors that may influence your decision.
             </p>
           </div>
-          <ul class="important__list">
-            <li class="important__item">
-              <img src="img/things/picture1.jpg" alt="picture 1">
-              <p>
-                Monthly payments on leases are generally 20% - 30% cheaper than loans
-              </p>
-            </li>
-            <li class="important__item">
-              <img src="img/things/picture2.jpg" alt="picture 2">
-              <p>
-                You may be eligible for a tax break if you use the leased vehicle for business purposes
-              </p>
-            </li>
-            <li class="important__item">
-              <img src="img/things/picture3.jpg" alt="picture 3">
-              <p>
-                Easy to upgrade to the newest vehicle model every few years
-              </p>
-            </li>
-            <li class="important__item">
-              <img src="img/things/picture4.jpg" alt="picture 4">
-              <p>
-                There are often fees charged if you drive more than your lease's mileage allowance
-              </p>
-            </li>
-          </ul>
+          <div class="important__block">
+            <ul class="important__list">
+              <li class="important__item">
+                <img src="img/things/picture1.jpg" alt="picture 1">
+                <p>
+                  Monthly payments on leases are generally 20% - 30% cheaper than loans
+                </p>
+              </li>
+              <li class="important__item">
+                <img src="img/things/picture2.jpg" alt="picture 2">
+                <p>
+                  You may be eligible for a tax break if you use the leased vehicle for business purposes
+                </p>
+              </li>
+              <li class="important__item">
+                <img src="img/things/picture3.jpg" alt="picture 3">
+                <p>
+                  Easy to upgrade to the newest vehicle model every few years
+                </p>
+              </li>
+              <li class="important__item">
+                <img src="img/things/picture4.jpg" alt="picture 4">
+                <p>
+                  There are often fees charged if you drive more than your lease's mileage allowance
+                </p>
+              </li>
+            </ul>
+          </div>
         </section><!--END important-->
       </div>
     </main>
     <footer class="footer">
       <div class="container">
-        <nav class="footer__nav">
-          <dl class="footer__list"><!--Products-->
-            <dt class="footer__list-title">Products</dt>
-            <dd class="footer__item">
-              <a class="footer__link" href="#">Used</a>
-            </dd>
-            <dd class="footer__item">
-              <a class="footer__link" href="#">New</a>
-            </dd>
-            <dd class="footer__item">
-              <a class="footer__link" href="#">Sell your car</a>
-            </dd>
-          </dl><!--end Products-->
-          <dl class="footer__list"><!--Resources-->
-            <dt class="footer__list-title">Resources</dt>
-            <dd class="footer__item">
-              <a class="footer__link" href="#">Blog</a>
-            </dd>
-            <dd class="footer__item">
-              <a class="footer__link" href="#">FAQ</a>
-            </dd>
-            <dd class="footer__item">
-              <a class="footer__link" href="#">Contact us</a>
-            </dd>
-          </dl><!--end Resources-->
-          <dl class="footer__list"><!--Work With TrueCar-->
-            <dt class="footer__list-title">Work With TrueCar</dt>
-            <dd class="footer__item">
-              <a class="footer__link" href="#">Dealers</a>
-            </dd>
-            <dd class="footer__item">
-              <a class="footer__link" href="#">Partners</a>
-            </dd>
-          </dl><!--end Work With TrueCar-->
-          <dl class="footer__list"><!--About-->
-            <dt class="footer__list-title">About</dt>
-            <dd class="footer__item">
-              <a class="footer__link" href="#">About us</a>
-            </dd>
-            <dd class="footer__item">
-              <a class="footer__link" href="#">Team</a>
-            </dd>
-            <dd class="footer__item">
-              <a class="footer__link" href="#">Careers</a>
-            </dd>
-          </dl><!--end About-->
-        </nav>
+        <div class="footer__block">
+          <nav class="footer__nav">
+            <dl class="footer__list"><!--Products-->
+              <dt class="footer__list-title">Products</dt>
+              <dd class="footer__item">
+                <a class="footer__link" href="#">Used</a>
+              </dd>
+              <dd class="footer__item">
+                <a class="footer__link" href="#">New</a>
+              </dd>
+              <dd class="footer__item">
+                <a class="footer__link" href="#">Sell your car</a>
+              </dd>
+            </dl><!--end Products-->
+            <dl class="footer__list"><!--Resources-->
+              <dt class="footer__list-title">Resources</dt>
+              <dd class="footer__item">
+                <a class="footer__link" href="#">Blog</a>
+              </dd>
+              <dd class="footer__item">
+                <a class="footer__link" href="#">FAQ</a>
+              </dd>
+              <dd class="footer__item">
+                <a class="footer__link" href="contacts.html">Contact us</a>
+              </dd>
+            </dl><!--end Resources-->
+            <dl class="footer__list"><!--Work With TrueCar-->
+              <dt class="footer__list-title">Work With TrueCar</dt>
+              <dd class="footer__item">
+                <a class="footer__link" href="#">Dealers</a>
+              </dd>
+              <dd class="footer__item">
+                <a class="footer__link" href="#">Partners</a>
+              </dd>
+            </dl><!--end Work With TrueCar-->
+            <dl class="footer__list"><!--About-->
+              <dt class="footer__list-title">About</dt>
+              <dd class="footer__item">
+                <a class="footer__link" href="#">About us</a>
+              </dd>
+              <dd class="footer__item">
+                <a class="footer__link" href="#">Team</a>
+              </dd>
+              <dd class="footer__item">
+                <a class="footer__link" href="#">Careers</a>
+              </dd>
+            </dl><!--end About-->
+          </nav>
+        </div>
         <div class="partners">
           <ul class="partners__list">
             <li class="partners__item">

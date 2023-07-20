@@ -17,9 +17,14 @@
             <img class="header__img" src="img/general/logo.svg" alt="logotype">
           </a>
           <nav class="menu">
+            <div class="menu__burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="#">NEW CARS</a>
+                <a class="menu__link" href="catalog.html">NEW CARS</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="#">PRE-OWNED CARS</a>
@@ -40,7 +45,7 @@
     </header>
     <main class="main">
       <div class="container">
-        <section class="section contact">
+        <section class="section contact"><!--contact-->
           <div class="section__title section__title-twenty">
             <h2>Contact Us</h2>
           </div>
@@ -56,12 +61,13 @@
               <input class="form-contact__input" type="email" maxlength="50" placeholder="E-mail">
             </div>
             <textarea class="form-contact__textarea" placeholder="Your text"></textarea>
-            <button class="section__btn form-contact__btn">
+            <button class="showmore-link">
               SUBMIT
             </button>
           </form>
-        </section>
-        <section class="section blog">
+        </section><!--END contact-->
+        
+        <section class="section blog"><!--blog-->
           <div class="blog__cover">
             <div class="blog__items">
               <div class="blog__item">
@@ -70,7 +76,7 @@
                 </div>
                 <div class="blog__preview">
                   <h3>An easier way to buy your next Toyota</h3>
-                  <a class="section__link" href="#">more</a>
+                  <a class="moreblue-link" href="#">more</a>
                 </div>
               </div>
               <div class="blog__item">
@@ -79,15 +85,15 @@
                 </div>
                 <div class="blog__preview">
                   <h3>An easier way to buy your next Toyota</h3>
-                  <a class="section__link" href="#">more</a>
+                  <a class="moreblue-link" href="#">more</a>
                 </div>
               </div>
             </div>
-            <button class="section__btn section__btn-contact">
+            <a href="#" class="showmore-link">
               Show more
-            </button>
+            </a>
           </div>
-        </section>
+        </section><!--END blog-->
       </div>
     </main>
     <footer class="footer">
@@ -190,4 +196,6 @@
   </div>
 </body>
 
+
+<script src="js/main.js"></script>
 </html>

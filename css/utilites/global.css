@@ -63,7 +63,7 @@ body {
   margin-bottom: 0;
 }
 
-.section__btn {
+.showmore-link {
   text-align: center;
   background: var(--black);
   color: var(--white);
@@ -73,12 +73,12 @@ body {
   text-transform: uppercase;
 }
 
-.section__btn:hover {
+.showmore-link:hover {
   background: var(--blue);
   border-color: var(--blue);
 }
 
-.section__link {
+.moreblue-link {
   padding: 4px 25px;
   background: var(--blue);
   color: var(--white);
@@ -89,6 +89,16 @@ body {
   text-transform: lowercase;
 }
 
-.section__link:hover {
+.moreblue-link:hover {
   background: var(--black);
+}
+
+@media (max-width: 830px) {
+  .section {
+    padding-bottom: 50px;
+  }
+
+  .section__title h2 {
+    font-size: 32px;
+  }
 }

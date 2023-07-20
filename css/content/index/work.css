@@ -33,3 +33,10 @@
 .work__item p {
   max-width: 270px;
 }
+
+@media (max-width: 550px) {
+  .work__item {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

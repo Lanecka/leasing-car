@@ -21,3 +21,84 @@ body {
 .main {
   flex-grow: 1;
 }
+
+.section {
+  padding-bottom: 150px;
+}
+
+.section__title h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.section__title-twenty h2 {
+  margin-bottom: 20px;
+}
+
+.section__subtitle p {
+  max-width: 580px;
+  margin: 0 auto 50px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.section__subtitle-centre p {
+  text-align: center;
+}
+
+.section__subtitle-full p {
+  max-width: 1200px;
+  text-align: center;
+}
+
+.section__info p {
+  margin: 0 auto 50px;
+  max-width: 580px;
+  line-height: 130%;
+}
+
+.section__info--last p {
+  margin-bottom: 0;
+}
+
+.showmore-link {
+  text-align: center;
+  background: var(--black);
+  color: var(--white);
+  padding: 13px 61px;
+  cursor: pointer;
+  transition: .5s;
+  text-transform: uppercase;
+}
+
+.showmore-link:hover {
+  background: var(--blue);
+  border-color: var(--blue);
+}
+
+.moreblue-link {
+  padding: 4px 25px;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  transition: .5s;
+  text-transform: lowercase;
+}
+
+.moreblue-link:hover {
+  background: var(--black);
+}
+
+@media (max-width: 830px) {
+  .section {
+    padding-bottom: 50px;
+  }
+
+  .section__title h2 {
+    font-size: 32px;
+  }
+}

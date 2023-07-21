@@ -13,13 +13,18 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <a href="#" class="logo">
+          <a href="index.html" class="logo">
             <img class="header__img" src="img/general/logo.svg" alt="logotype">
           </a>
           <nav class="menu">
+            <div class="menu__burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="#">NEW CARS</a>
+                <a class="menu__link" href="catalog.html">NEW CARS</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="#">PRE-OWNED CARS</a>
@@ -31,14 +36,66 @@
                 <a class="menu__link" href="#">LEASE VS BUY</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">CONTACT US</a>
+                <a class="menu__link menu__link-active" href="#">CONTACT US</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <div class="container">
+        <section class="section contact"><!--contact-->
+          <div class="section__title section__title-twenty">
+            <h2>Contact Us</h2>
+          </div>
+          <div class="section__subtitle section__subtitle-full">
+            <p>
+              Feel free to contact us with questions, potencial partnerships or media inquiries
+            </p>
+          </div>
+
+          <form class="form-contact" action="#">
+            <div class="form-contact__info">
+              <input class="form-contact__input" type="text" name="name" placeholder="Name" maxlength="50">
+              <input class="form-contact__input" type="email" maxlength="50" placeholder="E-mail">
+            </div>
+            <textarea class="form-contact__textarea" placeholder="Your text"></textarea>
+            <button class="showmore-link">
+              SUBMIT
+            </button>
+          </form>
+        </section><!--END contact-->
+
+        <section class="section blog"><!--blog-->
+          <div class="blog__cover">
+            <div class="blog__items">
+              <div class="blog__item">
+                <figure class="blog__img">
+                  <img src="img/blog/picture-1.jpg" alt="picture 1">
+                </figure>
+                <div class="blog__preview">
+                  <h3>An easier way to buy your next Toyota</h3>
+                  <a class="moreblue-link" href="#">more</a>
+                </div>
+              </div>
+              <div class="blog__item">
+                <figure class="blog__img">
+                  <img src="img/blog/picture-2.jpg" alt="picture 2">
+                </figure>
+                <div class="blog__preview">
+                  <h3>An easier way to buy your next Toyota</h3>
+                  <a class="moreblue-link" href="#">more</a>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="showmore-link">
+              Show more
+            </a>
+          </div>
+        </section><!--END blog-->
+      </div>
+    </main>
     <footer class="footer">
       <div class="container">
         <nav class="footer__nav">
@@ -137,6 +194,8 @@
       </div>
     </footer>
   </div>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>

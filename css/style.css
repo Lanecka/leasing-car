@@ -1,7 +1,14 @@
 /*content*/
 @import 'content/header.css';
-@import 'content/top.css';
+@import 'content/index/top.css';
+@import 'content/index/wherefore.css';
+@import 'content/index/work.css';
+@import 'content/index/welcome.css';
+@import 'content/index/important.css';
 @import 'content/footer.css';
+@import 'content/blog.css';
+@import 'content/contacts/contact.css';
+@import 'content/newCars/choose.css';
 
 /*utilites*/
 @import 'utilites/reset.css';

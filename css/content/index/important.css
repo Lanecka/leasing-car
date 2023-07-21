@@ -1,0 +1,36 @@
+.important__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.important__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.important__item {
+  width: 270px;
+}
+
+.important__item img {
+  margin-bottom: 20px;
+}
+
+.important__item p {
+  line-height: 130%;
+}
+
+@media (max-width: 1220px) {
+  .important__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  .important__list {
+    grid-template-columns: 1fr;
+  }
+}

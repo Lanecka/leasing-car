@@ -16,6 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   gap: 40px;
   width: 100%;
   margin-bottom: 50px;
@@ -55,4 +56,16 @@
   color: var(--black);
   opacity: .5;
   margin-bottom: 50px;
+}
+
+@media (max-width: 830px) {
+  .contact {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-contact__input {
+    width: 100%;
+  }
 }
